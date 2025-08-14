@@ -39,14 +39,19 @@ git clone https://github.com/WIQHE/Learning-With-Subgraphs.git
 cd Learning-With-Subgraphs
 ```
 
-2. Install dependencies:
+2. Run the setup script (recommended):
+```bash
+python setup.py
+```
+
+Or install dependencies manually:
 ```bash
 pip install -r requirements.txt
 ```
 
-3. Install PyTorch Geometric (if not automatically installed):
+3. Test the installation:
 ```bash
-pip install torch-geometric
+python test_refactored.py
 ```
 
 ## Project Structure
@@ -73,8 +78,12 @@ Learning-With-Subgraphs/
 │   └── comparison_example.py    # Compare both methods
 ├── requirements.txt             # Python dependencies
 ├── README.md                   # This file
+├── setup.py                    # Setup script for easy installation
+├── test_refactored.py          # Test script for the refactored framework
 ├── bfs_based.ipynb            # Original BFS notebook (legacy)
 └── sliding_window.ipynb       # Original sliding window notebook (legacy)
+
+**Note**: The original Jupyter notebooks (`bfs_based.ipynb` and `sliding_window.ipynb`) are kept for reference, but the refactored modular code in the `src/` directory is recommended for new projects.
 ```
 
 ## Methodology
